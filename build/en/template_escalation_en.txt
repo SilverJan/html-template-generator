@@ -1,0 +1,35 @@
+## $SYSTEM_NAME Escalation
+------------------------------------------------------------
+------------------------------------------------------------
+
+Dear $PRENAME $LASTNAME,
+
+A work item has been overdue for <b>$DAYS_OVERDUE day(s)</b>.
+
+Process:         $PROCESS_NAME [Name of the process or workflow]
+Description:     $WORK_ITEM_DESCRIPTION [Work item description, f.e. 'Approval process for new laptops']
+Status:          $WORK_ITEM_STATUS [Work item status, f.e. 'In Approval', 'Created', etc.]
+Started By:      ($LASTNAME $PRENAME ($DEPARTMENT)) || ($SYSTEM) [By whom (real person or system) the work item was started]
+ID:              $WORK_ITEM_ID [ID or number or similar for the work item]
+$OPTIONAL_KEY_1: $OPTIONAL_VALUE_1
+$OPTIONAL_KEY_2: $OPTIONAL_VALUE_2
+
+# Action can be taken via
+------------------------------------------------------------
+
+Unified Inbox (UIB) (http://)
+$SYSTEM_NAME (http://)
+
+# Direct Actions
+------------------------------------------------------------
+
+Approve (http://)
+Decline (http://)
+
+# Useful Links
+------------------------------------------------------------
+
+* $LINK_1 (http://)
+* $LINK_2 (http://)
+
+Please do not reply to this automatically generated email.

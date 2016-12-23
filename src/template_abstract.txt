@@ -1,0 +1,40 @@
+## $SYSTEM_NAME @TEMPLATE_TYPE@
+------------------------------------------------------------
+------------------------------------------------------------
+
+@SALUTATION@,
+
+@INTRODUCTION_TEXT@
+
+@PROCESS@:         $PROCESS_NAME [Name of the process or workflow]
+@DESCRIPTION@:     $WORK_ITEM_DESCRIPTION [Work item description, f.e. 'Approval process for new laptops']
+@STATUS@:          $WORK_ITEM_STATUS [Work item status, f.e. 'In Approval', 'Created', etc.]
+@STARTED_BY@:      ($LASTNAME $PRENAME ($DEPARTMENT)) || ($SYSTEM) [By whom (real person or system) the work item was started]
+@ID@:              $WORK_ITEM_ID [ID or number or similar for the work item]
+$OPTIONAL_KEY_1: $OPTIONAL_VALUE_1
+$OPTIONAL_KEY_2: $OPTIONAL_VALUE_2
+<!--@START@SECTION_DETAILS@@-->
+# @DETAILS@
+------------------------------------------------------------
+
+$SYSTEM_NAME_1 (http://)
+<!--@END@SECTION_DETAILS@@--><!--@START@SECTION_ACTION_CAN_BE_TAKEN@@-->
+# @ACTION_CAN_BE_TAKEN@
+------------------------------------------------------------
+
+SAP (http://)
+$SYSTEM_NAME (http://)
+<!--@END@SECTION_ACTION_CAN_BE_TAKEN@@--><!--@START@SECTION_DIRECT_ACTIONS@@-->
+# @DIRECT_ACTIONS@
+------------------------------------------------------------
+
+Approve (http://)
+Decline (http://)
+<!--@END@SECTION_DIRECT_ACTIONS@@-->
+# @USEFUL_LINKS@
+------------------------------------------------------------
+
+* $LINK_1 (http://)
+* $LINK_2 (http://)
+
+@DO_NOT_REPLY@

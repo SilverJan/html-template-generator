@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+	<meta charset="UTF-8">
+	<title>$SYSTEM_NAME Action Required</title>
+	<style>		
+		body {
+			font-size: 14.0px;
+			font-family: "Arial Bold", sans-serif;
+			line-height: 20px;
+			background: #DFDFE0;
+		}
+
+		.roottable {
+			width: 584px !important;
+			background: #FFFFFF;
+			margin: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			padding-top: 0px;
+			border-collapse: collapse;
+		}
+
+		.contenttable {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.space-below {
+			padding-bottom: 15px;
+			padding-top: 0px;
+		}
+		
+		p {
+			font-size: 14.0px;
+			font-family: "Arial Bold", sans-serif;
+			line-height: 20px;
+		}
+		
+		td {
+			font-size: 14.0px;
+			font-family: "Arial Bold", sans-serif;
+			line-height: 20px;
+		}
+		
+		.workitemtable {
+			border-collapse: collapse;
+			border-spacing: 0px;
+			font-size: 14.0px;
+			line-height: 20px;
+		}
+
+		.workitemtable tr {
+			border-top: 0.5px solid #BFC0C2;
+			border-bottom: 0.5px solid #BFC0C2;
+		}
+
+		.workitemtable tr:nth-child(odd) {
+			background: #DFDFE0;
+		}
+		
+		.workitemtable td {
+			padding: 5px 5px 5px 5px;
+			height: 18px;
+			line-height: 15px;
+		}
+
+		.actionBtnTable {
+			border-spacing: 0px;
+			width: 210px;
+		}
+		
+		.actionBtnHeader {
+			background: #005691;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			margin: 0px;
+			height: 44.5px;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.actionBtnHeader a {
+			color: #FFFFFF;
+			font-family: "Arial Bold", sans-serif;
+			font-size: 15px;
+			text-decoration: none;
+		}
+
+		.actionBtnFooter {
+			background: #008ECF;
+			padding-top: 2px;
+			padding-bottom: 1px;
+		}
+		
+		.btnApprove {
+			background: #78BE20;
+		}
+		
+		.btnDecline {
+			background: #E20015;
+		}
+		/* Modified h2 margin-bottom as default values are too big*/
+		
+		h2 {
+			font-family: "Verdana Bold", sans-serif;
+			font-size: 36px;
+			line-height: 40px;
+			color: #000000;
+			margin-bottom: 5px;
+			margin-top: 5px;
+		}
+		/* Modified h6 margin-top and margin-bottom as default values are too big*/
+		
+		h6 {
+			font-size: 16px;
+			font-family: "Arial Bold", sans-serif;
+			line-height: 20px;
+			margin-top: 12px;
+			margin-bottom: 12px;
+		}
+		
+		ul {
+			line-height: 24px;
+			list-style-type: square;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+
+		.supergraphic {
+			display: block; 
+			width: 584px;
+			padding: 0px;
+		}
+		
+		.link {
+			color: #005691;
+			text-decoration: none;
+		}
+		
+		.footer {
+			font-size: 12.0px;
+			font-family: "Arial Bold", sans-serif;
+			line-height: 12px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<table width="584" class="roottable" align="center">
+		<tr>
+			<td class="supergraphic">
+				<img src="https://sites.inside-share.bosch.com/sites/000319/Documents/Workflow%20Community/Public/Email_Notification_Templates/res/bosch_supergraphic_15px.png"
+					height="20" width="584" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table class="contenttable">
+					<tr>
+						<td>
+							<h2>$SYSTEM_NAME Action Required</h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table>
+								<tr>
+									<td>
+										<p><b>Dear $PRENAME $LASTNAME,</b><br><br>A work item is waiting for your approval. Please review and process accordingly.<br>
+											<!--[if mso]>
+											<br>
+											<![endif]-->
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="space-below">
+										<table class="workitemtable">
+											<tr>
+												<td><b>Process</b></td>
+												<td>$PROCESS_NAME [Name of the process or workflow]</td>
+											</tr>
+											<tr>
+												<td><b>Description</b></td>
+												<td>$WORK_ITEM_DESCRIPTION [Work item description, f.e. 'Approval process for new laptops']</td>
+											</tr>
+											<tr>
+												<td><b>Status</b></td>
+												<td>$WORK_ITEM_STATUS [Work item status, f.e. 'In Approval', 'Created', etc.]</td>
+											</tr>
+											<tr>
+												<td><b>Started By</b>
+												</td>
+												<td>($LASTNAME $PRENAME ($DEPARTMENT)) || ($SYSTEM_STARTED) [By whom (real person or system) the work item was started]</td>
+											</tr>
+											<tr>
+												<td><b>ID</b></td>
+												<td>$WORK_ITEM_ID [ID or number or similar for the work item]</td>
+											</tr>
+											<tr>
+												<td><b>$OPTIONAL_KEY_1</b></td>
+												<td>$OPTIONAL_VALUE_1</td>
+											</tr>
+											<tr>
+												<td><b>$OPTIONAL_KEY_2</b>
+												</td>
+												<td>$OPTIONAL_VALUE_2</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								
+								
+								<tr>
+									<td class="space-below">
+										<h6>Action can be taken via</h6>
+										<table width="100%">
+											<tr>
+												<td align="center">
+													<table class="actionBtnTable" cellspacing="0">
+														<tr>
+															<td class="actionBtnHeader">
+																<a href="http://">Unified Inbox (UIB)</a>
+															</td>
+														</tr>
+														<tr>
+															<td class="actionBtnFooter">
+															</td>
+														</tr>
+													</table>
+													<td align="center">
+														<table class="actionBtnTable" cellspacing="0">
+															<tr>
+																<td class="actionBtnHeader">
+																	<a href="http://">$SYSTEM_NAME</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="actionBtnFooter">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								
+								
+								<tr>
+									<td class="space-below">
+										<h6>Direct Actions</h6>
+										<table width="100%">
+											<tr>
+												<td align="center">
+													<table class="actionBtnTable" cellspacing="0">
+														<tr>
+															<td class="actionBtnHeader">
+																<a href="http://">Approve</a>
+															</td>
+														</tr>
+														<tr>
+															<td class="actionBtnFooter">
+															</td>
+														</tr>
+													</table>
+													<td align="center">
+														<table class="actionBtnTable" cellspacing="0">
+															<tr>
+																<td class="actionBtnHeader">
+																	<a href="http://">Decline</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="actionBtnFooter">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="space-below">
+										<h6>Useful Links</h6>
+										<p>
+											<a href="http://" class="link">$LINK_1&nbsp;
+				<img src="https://sites.inside-share.bosch.com/sites/000319/Documents/Workflow%20Community/Public/Email_Notification_Templates/res/Bosch-Ic-forward-right-black-96x96.png" width="5"/>
+									</a>
+											<br>
+											<a href="http://" class="link">$LINK_2&nbsp;
+				<img src="https://sites.inside-share.bosch.com/sites/000319/Documents/Workflow%20Community/Public/Email_Notification_Templates/res/Bosch-Ic-forward-right-black-96x96.png" width="5"/>
+									</a>
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="footer ">Please do not reply to this automatically generated email.</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+## $SYSTEM_NAME Benachrichtigung
+------------------------------------------------------------
+------------------------------------------------------------
+
+Sehr geehrte/r Frau/Herr $PRENAME $LASTNAME,
+
+eine Arbeitsaufgabe wurde $LAST_ACTION [f.e. approved, declined, etc.].
+
+Prozess:         $PROCESS_NAME [Name of the process or workflow]
+Beschreibung:     $WORK_ITEM_DESCRIPTION [Work item description, f.e. 'Approval process for new laptops']
+Status:          $WORK_ITEM_STATUS [Work item status, f.e. 'In Approval', 'Created', etc.]
+Gestartet durch:      ($LASTNAME $PRENAME ($DEPARTMENT)) || ($SYSTEM) [By whom (real person or system) the work item was started]
+ID:              $WORK_ITEM_ID [ID or number or similar for the work item]
+$OPTIONAL_KEY_1: $OPTIONAL_VALUE_1
+$OPTIONAL_KEY_2: $OPTIONAL_VALUE_2
+
+# Details
+------------------------------------------------------------
+
+$SYSTEM_NAME (http://)
+
+# Hilfreiche Links
+------------------------------------------------------------
+
+* $LINK_1 (http://)
+* $LINK_2 (http://)
+
+Bitte antworten Sie nicht auf diese automatisch generierte Email.
