@@ -35,6 +35,7 @@ There are two abstract templates for HTML and plain text. Both templates use the
 
 #### II.2.1 Modifying of Data Replacement Wildcards
 To add a new wildcard, follow these steps:
+
 1. Add a new wildcard with '@TEST@' scheme in the plain text and HTML abstract file in src/ dir
 2. Add the wildcard element name ('TEST' in this example) to the abstract JSON element in the gulpfile.js
 3. Add the wildcard element and its values (String) to the JSON file in the gulpfile.js for all languages and template types
@@ -42,6 +43,7 @@ To add a new wildcard, follow these steps:
 
 #### II.2.2 Modifying of Section Replacement Wildcards
 To add a new wildcard, follow these steps:
+
 1. Add two new wildcards with '< !--@START@SECTION_TEST@@-->' and < !--@END@SECTION_TEST@@--> scheme (HTML comments) in the plain text and HTML abstract file in src/ dir
 2. Add the wildcard element name ('SECTION_TEST' in this example) to the abstract JSON element in the gulpfile.js
 3. Add the wildcard element and its values (Boolean) to the JSON file in the gulpfile.js for all languages and template types
